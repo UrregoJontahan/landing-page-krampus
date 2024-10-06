@@ -1,0 +1,24 @@
+---
+import "../../styles/global.css"
+import Description from "../../components/TargetsBenefits.astro"
+import UseExtension from "../../components/UseExtension.astro"
+import LinkDownload from "../../components/LinkDownload.astro"
+import HeroPrueba from "../../components/Hero.astro"
+
+const { currentLocale } = Astro
+---
+
+<html lang={ currentLocale }>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Extension-Pair-Programing</title>
+	</head>
+	<body>
+		<LinkDownload/>
+		<HeroPrueba/>
+		<UseExtension/>
+		<Description/>
+	</body>
+</html>

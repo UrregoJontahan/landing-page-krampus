@@ -1,0 +1,23 @@
+---
+import "../styles/computers.css"
+import Cable from "./Cable.astro"
+import Logo from "./Logo.astro"
+---
+
+<div class="ml-40 flex justify-center items-center">
+    <div class="flex justify-center items-center">
+        <img src="../../public/images/computer.gif" 
+        class="w-[370px] computers computer-one relative left-80 z-10" 
+        alt="computer">
+        <div class="conection-dot flex justify-center items-center flex-col absolute h-[150px] gap-y-12">
+             <Cable/>
+        </div>
+        <!-- <div class="absolute mb-80 flex items-center justify-center mr-20">
+            <Logo/>
+            <h1 class="text-7xl font-bold text-white">Krampus</h1>
+        </div> -->
+        <img src="../../public/images/computer.gif" 
+            class="w-[370px] computers computer-two relative right-80 z-10" 
+            alt="computer">
+    </div>
+</div>

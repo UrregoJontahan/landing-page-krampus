@@ -1,0 +1,53 @@
+.computers {
+  opacity: 0; 
+  animation: aparecer .8s ease forwards, separarComputers 2s cubic-bezier(0.1, 1, 0.8, 1) forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes separarComputers {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+
+.computer-two {
+  animation: aparecer .8s ease forwards, separarComputersReverse 2s cubic-bezier(0.1, 1, 0.8, 1) forwards;
+}
+
+@keyframes separarComputersReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+.conection-dot {
+  opacity: 0;
+  animation: aparecerConection 1.1s ease-in-out .3s forwards;
+}
+
+@keyframes aparecerConection {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,41 @@
+---
+import "../styles/useExtension.css"
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<section class="section-use">
+    <div class="mt-72 flex w-full justify-around items-center ">
+        <div class="flex p-16 w-[600px] h-[400px] justify-center mt-48
+        element-hidden container-text " id="container-text">
+            <h3 class="text-white text-xl text-description mt-10">
+                { t("h3.useExtension")}
+            </h3>
+        </div>
+        <div class="gif-extension flex items-center relative justify-center right-12 rounded-3xl element-hidden" id="gif-image">
+            <img src="../../public/images/gifvsCode.gif" class="w-[900px] h-[600px] hover:scale-110 transition-transform
+            duration-300 img-gif" alt="">
+        </div>
+    </div>
+</section> 
+ 
+<script>
+    const title: any = document.getElementById("title-use-extension");
+    const infoUseExtension: any = document.getElementById("container-text");
+    const containerGif: any = document.getElementById("gif-image");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 600) {
+            infoUseExtension.classList.remove("element-hidden");
+            containerGif.classList.remove("element-hidden");
+            title.classList.remove("element-hidden");
+        } else {
+            infoUseExtension.classList.add("element-hidden");
+            containerGif.classList.add("element-hidden");
+            title.classList.add("element-hidden");
+        }
+    });
+</script>
+ 

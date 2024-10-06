@@ -1,0 +1,23 @@
+
+.title-hero {
+    color: white;
+    font-family: 'Lexend Variable', sans-serif;
+    text-shadow: 0 2px 5px red;
+}
+
+.scroll-active-title {
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: -2rem;
+    transform: scale(0.75);
+    z-index: 30;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-active-logo {
+    width: 90px;
+    height: 90px;
+    transform: scale(0.75);
+    transition: all 0.5s ease-in-out;
+}

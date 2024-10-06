@@ -1,0 +1,14 @@
+/* #benefits {
+    background-color: rgb(6, 143, 148);
+    background-image: radial-gradient(ellipse 80% 80% at 50% 60%, rgb(66, 71, 71) , #010811);
+} */
+
+.title-benefits{
+    font-family: 'Lexend Variable', sans-serif;
+    text-shadow: 0 2px 5px rgba(11, 0, 19, 0.781);
+    transition: opacity 0.8s ease-in-out;
+}
+
+.container-benefits{
+    background-color: #5018aa;
+}

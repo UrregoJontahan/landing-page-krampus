@@ -1,0 +1,74 @@
+.progress-container {
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.cable-container {
+    animation: show-line 1s ease-in-out forwards;
+    overflow: hidden;
+}
+
+@keyframes show-line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 400px;
+    }
+}
+
+.cable {
+    width: 400px;
+    height: 5px;
+    border: 1px solid rgb(109, 110, 114);
+    background-color: rgba(7, 48, 233, 0.767);
+    overflow: hidden;
+}
+
+.data {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(84, 223, 241);
+    animation: data-left 1s linear infinite alternate;
+    animation-delay: 2s; 
+    border: 1px solid rgb(9, 196, 243);
+}
+
+.one {
+    animation-delay: 2.1s;
+}
+.two {
+    animation-delay: 3.2s;
+}
+.three {
+    animation-delay: 2.3s;
+}
+.four {
+    animation-delay: 3.4s;
+}
+.five{
+    animation-delay: 2.5s;
+}
+
+@keyframes data-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+

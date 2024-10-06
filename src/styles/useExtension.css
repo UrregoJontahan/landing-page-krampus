@@ -1,0 +1,30 @@
+.gif-extension.element-hidden {
+    transform: translateX(1000px);
+    transition: transform 1s ease-in-out;
+}
+
+.title-useExtension.element-hidden {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}  
+
+.container-text.element-hidden {
+    transform: translateX(-700px);
+    transition: transform 0.8s ease-in-out; 
+}
+
+.container-text {
+    font-family: 'Lexend Variable', sans-serif;
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+.gif-extension {
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+.img-gif {
+    box-shadow: 0px 4px 15px rgba(8, 112, 107, 0.884);
+}
+  
